@@ -1,0 +1,31 @@
+{
+  "name": "reason-redis",
+  "version": "0.0.0",
+  "esy": {
+    "build": "dune build -p reason-redis",
+    "buildsInSource": "_build",
+    "release": {
+      "releasedBinaries": [
+        "server.exe"
+      ]
+    }
+  },
+  "scripts": {
+    "start": "esy x server.exe"
+  },
+  "dependencies": {
+    "@esy-ocaml/reason": "^3.7.0",
+    "@opam/dune": "*",
+    "@opam/lwt": "5.5.0",
+    "@opam/opium": "0.20.0",
+    "@opam/redis": "0.5",
+    "@opam/redis-lwt": "0.5",
+    "@reason-native/console": "*",
+    "@reason-native/pastel": "*",
+    "ocaml": "~4.11.0"
+  },
+  "devDependencies": {
+    "@opam/merlin": "4.4-411",
+    "@opam/ocaml-lsp-server": "1.4.1"
+  }
+}

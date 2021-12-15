@@ -1,0 +1,4 @@
+(executable
+ (name server)
+ (public_name server.exe)
+ (libraries opium lwt redis redis-lwt))
